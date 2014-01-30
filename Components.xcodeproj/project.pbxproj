@@ -15,6 +15,16 @@
 		44D07EB6189AA5EC0006F5A8 /* libComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D07E9E189AA5EB0006F5A8 /* libComponents.a */; };
 		44D07EBC189AA5EC0006F5A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44D07EBA189AA5EC0006F5A8 /* InfoPlist.strings */; };
 		44D07EBE189AA5EC0006F5A8 /* ComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EBD189AA5EC0006F5A8 /* ComponentsTests.m */; };
+		44D07ECE189AA9240006F5A8 /* NSArray+MapFromJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EC9189AA9240006F5A8 /* NSArray+MapFromJSON.m */; };
+		44D07ECF189AA9240006F5A8 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ECB189AA9240006F5A8 /* UIImage+ImageEffects.m */; };
+		44D07ED0189AA9240006F5A8 /* UIImageView+LoadUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ECD189AA9240006F5A8 /* UIImageView+LoadUrl.m */; };
+		44D07ED3189AC3EF0006F5A8 /* MICJsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ED2189AC3EF0006F5A8 /* MICJsonObject.m */; };
+		44D07EE0189AC4DF0006F5A8 /* MICArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ED7189AC4DF0006F5A8 /* MICArrayDataSource.m */; };
+		44D07EE1189AC4DF0006F5A8 /* MICBaseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ED9189AC4DF0006F5A8 /* MICBaseDataSource.m */; };
+		44D07EE2189AC4DF0006F5A8 /* MICClientDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDB189AC4DF0006F5A8 /* MICClientDataSource.m */; };
+		44D07EE3189AC4DF0006F5A8 /* MICCoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDD189AC4DF0006F5A8 /* MICCoreDataSource.m */; };
+		44D07EE4189AC4DF0006F5A8 /* MICCompositeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */; };
+		44D07EE7189AC5320006F5A8 /* MICManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,26 @@
 		44D07EB9189AA5EC0006F5A8 /* ComponentsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ComponentsTests-Info.plist"; sourceTree = "<group>"; };
 		44D07EBB189AA5EC0006F5A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44D07EBD189AA5EC0006F5A8 /* ComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentsTests.m; sourceTree = "<group>"; };
+		44D07EC8189AA9240006F5A8 /* NSArray+MapFromJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MapFromJSON.h"; sourceTree = "<group>"; };
+		44D07EC9189AA9240006F5A8 /* NSArray+MapFromJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MapFromJSON.m"; sourceTree = "<group>"; };
+		44D07ECA189AA9240006F5A8 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		44D07ECB189AA9240006F5A8 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		44D07ECC189AA9240006F5A8 /* UIImageView+LoadUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LoadUrl.h"; sourceTree = "<group>"; };
+		44D07ECD189AA9240006F5A8 /* UIImageView+LoadUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LoadUrl.m"; sourceTree = "<group>"; };
+		44D07ED1189AC3EF0006F5A8 /* MICJsonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICJsonObject.h; sourceTree = "<group>"; };
+		44D07ED2189AC3EF0006F5A8 /* MICJsonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICJsonObject.m; sourceTree = "<group>"; };
+		44D07ED6189AC4DF0006F5A8 /* MICArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICArrayDataSource.h; sourceTree = "<group>"; };
+		44D07ED7189AC4DF0006F5A8 /* MICArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICArrayDataSource.m; sourceTree = "<group>"; };
+		44D07ED8189AC4DF0006F5A8 /* MICBaseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICBaseDataSource.h; sourceTree = "<group>"; };
+		44D07ED9189AC4DF0006F5A8 /* MICBaseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICBaseDataSource.m; sourceTree = "<group>"; };
+		44D07EDA189AC4DF0006F5A8 /* MICClientDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICClientDataSource.h; sourceTree = "<group>"; };
+		44D07EDB189AC4DF0006F5A8 /* MICClientDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICClientDataSource.m; sourceTree = "<group>"; };
+		44D07EDC189AC4DF0006F5A8 /* MICCoreDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICCoreDataSource.h; sourceTree = "<group>"; };
+		44D07EDD189AC4DF0006F5A8 /* MICCoreDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICCoreDataSource.m; sourceTree = "<group>"; };
+		44D07EDE189AC4DF0006F5A8 /* MICCompositeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICCompositeDataSource.h; sourceTree = "<group>"; };
+		44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICCompositeDataSource.m; sourceTree = "<group>"; };
+		44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICManagedObjectContext.h; sourceTree = "<group>"; };
+		44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICManagedObjectContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +138,14 @@
 		44D07EA3189AA5EB0006F5A8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				44D07EA6189AA5EB0006F5A8 /* Components.h */,
+				44D07EC7189AA9190006F5A8 /* Categories */,
+				44D07ED5189AC4A10006F5A8 /* Data Sources */,
 				44D07EA4189AA5EB0006F5A8 /* Supporting Files */,
+				44D07ED1189AC3EF0006F5A8 /* MICJsonObject.h */,
+				44D07ED2189AC3EF0006F5A8 /* MICJsonObject.m */,
+				44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */,
+				44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */,
+				44D07EA6189AA5EB0006F5A8 /* Components.h */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -138,6 +174,36 @@
 				44D07EBA189AA5EC0006F5A8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44D07EC7189AA9190006F5A8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				44D07EC8189AA9240006F5A8 /* NSArray+MapFromJSON.h */,
+				44D07EC9189AA9240006F5A8 /* NSArray+MapFromJSON.m */,
+				44D07ECA189AA9240006F5A8 /* UIImage+ImageEffects.h */,
+				44D07ECB189AA9240006F5A8 /* UIImage+ImageEffects.m */,
+				44D07ECC189AA9240006F5A8 /* UIImageView+LoadUrl.h */,
+				44D07ECD189AA9240006F5A8 /* UIImageView+LoadUrl.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		44D07ED5189AC4A10006F5A8 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				44D07ED6189AC4DF0006F5A8 /* MICArrayDataSource.h */,
+				44D07ED7189AC4DF0006F5A8 /* MICArrayDataSource.m */,
+				44D07ED8189AC4DF0006F5A8 /* MICBaseDataSource.h */,
+				44D07ED9189AC4DF0006F5A8 /* MICBaseDataSource.m */,
+				44D07EDA189AC4DF0006F5A8 /* MICClientDataSource.h */,
+				44D07EDB189AC4DF0006F5A8 /* MICClientDataSource.m */,
+				44D07EDE189AC4DF0006F5A8 /* MICCompositeDataSource.h */,
+				44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */,
+				44D07EDC189AC4DF0006F5A8 /* MICCoreDataSource.h */,
+				44D07EDD189AC4DF0006F5A8 /* MICCoreDataSource.m */,
+			);
+			name = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +250,7 @@
 		44D07E96189AA5EB0006F5A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MIC;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Eduardo Mauricio da Costa";
 			};
@@ -221,6 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D07ED3189AC3EF0006F5A8 /* MICJsonObject.m in Sources */,
+				44D07EE0189AC4DF0006F5A8 /* MICArrayDataSource.m in Sources */,
+				44D07ECF189AA9240006F5A8 /* UIImage+ImageEffects.m in Sources */,
+				44D07EE1189AC4DF0006F5A8 /* MICBaseDataSource.m in Sources */,
+				44D07EE7189AC5320006F5A8 /* MICManagedObjectContext.m in Sources */,
+				44D07EE4189AC4DF0006F5A8 /* MICCompositeDataSource.m in Sources */,
+				44D07ED0189AA9240006F5A8 /* UIImageView+LoadUrl.m in Sources */,
+				44D07EE3189AC4DF0006F5A8 /* MICCoreDataSource.m in Sources */,
+				44D07ECE189AA9240006F5A8 /* NSArray+MapFromJSON.m in Sources */,
+				44D07EE2189AC4DF0006F5A8 /* MICClientDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +482,7 @@
 				44D07EC3189AA5EC0006F5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44D07EC4189AA5EC0006F5A8 /* Build configuration list for PBXNativeTarget "ComponentsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +491,7 @@
 				44D07EC6189AA5EC0006F5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
