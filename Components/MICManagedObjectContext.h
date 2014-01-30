@@ -13,4 +13,6 @@
 
 + (instancetype)instance;
 
+- (void)saveContext;
+
 @end

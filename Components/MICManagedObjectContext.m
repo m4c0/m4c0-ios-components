@@ -56,4 +56,11 @@
     return _context;
 }
 
+- (void)saveContext {
+    NSError * err;
+    if (_context && [_context hasChanges] && ![_context save:&err]) {
+        NSLog(@"%@", err);
+    }
+}
+
 @end
