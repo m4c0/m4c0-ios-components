@@ -10,7 +10,7 @@
 
 #import <CoreData/CoreData.h>
 
-#import "ROJManagedObjectContext.h"
+#import "MICManagedObjectContext.h"
 
 @interface MICCoreDataSource ()<NSFetchedResultsControllerDelegate>
 @property (nonatomic, readonly) NSFetchedResultsController * controller;
@@ -48,7 +48,7 @@
     req.sortDescriptors = self.sortDescriptors;
     
     _controller = [[NSFetchedResultsController alloc] initWithFetchRequest:req
-                                                      managedObjectContext:[ROJManagedObjectContext instance].context
+                                                      managedObjectContext:[MICManagedObjectContext instance].context
                                                         sectionNameKeyPath:self.sectionNameKeyPath
                                                                  cacheName:nil];
     

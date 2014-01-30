@@ -9,5 +9,5 @@
 #import "MICBaseDataSource.h"
 
 @interface MICCompositeDataSource : MICBaseDataSource
-@property (nonatomic, strong) IBOutletCollection(ROJBaseDataSource) NSArray * dataSources;
+@property (nonatomic, strong) IBOutletCollection(MICBaseDataSource) NSArray * dataSources;
 @end
