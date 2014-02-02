@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MICCoreDataSource : NSObject<UICollectionViewDataSource>
+@interface MICCoreDataSource : NSObject<UICollectionViewDataSource, UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
+@property (nonatomic, weak) IBOutlet UITableView * tableView;
 
 @property (nonatomic, strong) NSString * entityName;
 @property (nonatomic, strong) NSString * sectionNameKeyPath;

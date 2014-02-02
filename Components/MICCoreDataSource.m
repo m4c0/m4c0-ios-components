@@ -63,6 +63,8 @@
     return _controller;
 }
 
+#pragma mark - Collection View Data Source
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return [[self.controller sections] count];
 }
@@ -76,6 +78,24 @@
     [cell setValue:[self.controller objectAtIndexPath:indexPath] forKey:@"object"];
     return cell;
 }
+
+#pragma mark - Table View Data Source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [[self.controller sections] count];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [[[self.controller sections] objectAtIndex:section] numberOfObjects];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    [cell setValue:[self.controller objectAtIndexPath:indexPath] forKey:@"object"];
+    return cell;
+}
+
+#pragma mark - Fetched Results Controller Delegate
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     indexPathChanges = [NSMutableArray new];
