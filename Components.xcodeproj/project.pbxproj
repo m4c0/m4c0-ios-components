@@ -24,6 +24,7 @@
 		44D07F1C189FC77A0006F5A8 /* NSManagedObject+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */; };
 		44D07F22189FECC80006F5A8 /* UITableViewCell+ShowErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07F20189FECC80006F5A8 /* UITableViewCell+ShowErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44D07F23189FECC80006F5A8 /* UITableViewCell+ShowErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07F21189FECC80006F5A8 /* UITableViewCell+ShowErrors.m */; };
+		44D07F25189FFBCF0006F5A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D07F24189FFBCF0006F5A8 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,6 @@
 		44D07EA5189AA5EB0006F5A8 /* Components-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Components-Prefix.pch"; sourceTree = "<group>"; };
 		44D07EA6189AA5EB0006F5A8 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		44D07EAF189AA5EB0006F5A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		44D07EB2189AA5EC0006F5A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		44D07EC8189AA9240006F5A8 /* NSArray+MapFromJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MapFromJSON.h"; sourceTree = "<group>"; };
 		44D07EC9189AA9240006F5A8 /* NSArray+MapFromJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MapFromJSON.m"; sourceTree = "<group>"; };
 		44D07ECA189AA9240006F5A8 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Validation.m"; sourceTree = "<group>"; };
 		44D07F20189FECC80006F5A8 /* UITableViewCell+ShowErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ShowErrors.h"; sourceTree = "<group>"; };
 		44D07F21189FECC80006F5A8 /* UITableViewCell+ShowErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ShowErrors.m"; sourceTree = "<group>"; };
+		44D07F24189FFBCF0006F5A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D07F25189FFBCF0006F5A8 /* CoreData.framework in Frameworks */,
 				44D07EA2189AA5EB0006F5A8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,9 +93,9 @@
 		44D07EA0189AA5EB0006F5A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44D07F24189FFBCF0006F5A8 /* CoreData.framework */,
 				44D07EA1189AA5EB0006F5A8 /* Foundation.framework */,
 				44D07EAF189AA5EB0006F5A8 /* XCTest.framework */,
-				44D07EB2189AA5EC0006F5A8 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@
 
 #import "UITableViewCell+ShowErrors.h"
 
+#import <CoreData/CoreData.h>
 #import <objc/runtime.h>
 
 static const char kUITableViewCellShowErrorsError;
@@ -32,7 +33,13 @@ static const char kUITableViewCellShowErrorsError;
 }
 
 - (IBAction)showError:(id)sender {
-    NSLog(@"%@", self.error);
+    NSArray * errors = (self.error.code == NSValidationMultipleErrorsError) ? self.error.userInfo[NSDetailedErrorsKey] : @[self.error];
+    
+    for (NSError * err in errors) {
+        NSString * key = [NSString stringWithFormat:@"%@.%d", err.domain, err.code];
+        NSString * msg = NSLocalizedStringFromTable(key, @"ValidationErrors", key);
+        [[[UIAlertView alloc] initWithTitle:@"" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
 }
 
 @end
