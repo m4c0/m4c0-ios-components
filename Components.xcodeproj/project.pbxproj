@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		44C6C5FB189F128D00F96182 /* MICCoreDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07EDC189AC4DF0006F5A8 /* MICCoreDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44D07EA2189AA5EB0006F5A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D07EA1189AA5EB0006F5A8 /* Foundation.framework */; };
-		44D07EA7189AA5EB0006F5A8 /* Components.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44D07EA6189AA5EB0006F5A8 /* Components.h */; };
 		44D07ECE189AA9240006F5A8 /* NSArray+MapFromJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EC9189AA9240006F5A8 /* NSArray+MapFromJSON.m */; };
 		44D07ECF189AA9240006F5A8 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ECB189AA9240006F5A8 /* UIImage+ImageEffects.m */; };
 		44D07ED0189AA9240006F5A8 /* UIImageView+LoadUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07ECD189AA9240006F5A8 /* UIImageView+LoadUrl.m */; };
@@ -21,19 +20,6 @@
 		44D07EE4189AC4DF0006F5A8 /* MICCompositeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */; };
 		44D07EE7189AC5320006F5A8 /* MICManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		44D07E9C189AA5EB0006F5A8 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				44D07EA7189AA5EB0006F5A8 /* Components.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		44D07E9E189AA5EB0006F5A8 /* libComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,7 +162,6 @@
 			buildPhases = (
 				44D07E9A189AA5EB0006F5A8 /* Sources */,
 				44D07E9B189AA5EB0006F5A8 /* Frameworks */,
-				44D07E9C189AA5EB0006F5A8 /* CopyFiles */,
 				44C6C5FA189F128700F96182 /* Headers */,
 			);
 			buildRules = (
@@ -315,6 +300,7 @@
 				GCC_PREFIX_HEADER = "Components/Components-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -327,6 +313,7 @@
 				GCC_PREFIX_HEADER = "Components/Components-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
