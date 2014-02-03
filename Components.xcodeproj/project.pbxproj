@@ -20,6 +20,8 @@
 		44D07EE4189AC4DF0006F5A8 /* MICCompositeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */; };
 		44D07EE7189AC5320006F5A8 /* MICManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */; };
 		44D07F18189FC3420006F5A8 /* MICManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F1B189FC77A0006F5A8 /* NSManagedObject+Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07F19189FC77A0006F5A8 /* NSManagedObject+Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F1C189FC77A0006F5A8 /* NSManagedObject+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICCompositeDataSource.m; sourceTree = "<group>"; };
 		44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICManagedObjectContext.h; sourceTree = "<group>"; };
 		44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICManagedObjectContext.m; sourceTree = "<group>"; };
+		44D07F19189FC77A0006F5A8 /* NSManagedObject+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Validation.h"; sourceTree = "<group>"; };
+		44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Validation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 			children = (
 				44D07EC8189AA9240006F5A8 /* NSArray+MapFromJSON.h */,
 				44D07EC9189AA9240006F5A8 /* NSArray+MapFromJSON.m */,
+				44D07F19189FC77A0006F5A8 /* NSManagedObject+Validation.h */,
+				44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */,
 				44D07ECA189AA9240006F5A8 /* UIImage+ImageEffects.h */,
 				44D07ECB189AA9240006F5A8 /* UIImage+ImageEffects.m */,
 				44D07ECC189AA9240006F5A8 /* UIImageView+LoadUrl.h */,
@@ -151,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C6C5FB189F128D00F96182 /* MICCoreDataSource.h in Headers */,
+				44D07F1B189FC77A0006F5A8 /* NSManagedObject+Validation.h in Headers */,
 				44D07F18189FC3420006F5A8 /* MICManagedObjectContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D07ED3189AC3EF0006F5A8 /* MICJsonObject.m in Sources */,
+				44D07F1C189FC77A0006F5A8 /* NSManagedObject+Validation.m in Sources */,
 				44D07EE0189AC4DF0006F5A8 /* MICArrayDataSource.m in Sources */,
 				44D07ECF189AA9240006F5A8 /* UIImage+ImageEffects.m in Sources */,
 				44D07EE1189AC4DF0006F5A8 /* MICBaseDataSource.m in Sources */,
