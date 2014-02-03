@@ -56,6 +56,20 @@
     return _context;
 }
 
+- (NSEntityDescription *)entityDescriptionForName:(NSString *)name {
+    return [NSEntityDescription entityForName:name inManagedObjectContext:self.context];
+}
+
+- (id)insertNewObjectForEntityForName:(NSString *)name {
+    return [NSEntityDescription insertNewObjectForEntityForName:name inManagedObjectContext:self.context];
+}
+
+- (void)rollbackContext {
+    if (_context && [_context hasChanges]) {
+        [_context rollback];
+    }
+}
+
 - (void)saveContext {
     NSError * err;
     if (_context && [_context hasChanges] && ![_context save:&err]) {
