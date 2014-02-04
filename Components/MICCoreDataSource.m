@@ -103,12 +103,23 @@
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
-    [self.collectionView performBatchUpdates:^{
+    if (self.tableView) {
+        [self.tableView beginUpdates];
         [self performBatchUpdates];
-    } completion:^(BOOL finished) {
-        indexPathChanges = nil;
-        sectionChanges = nil;
-    }];
+        [self.tableView endUpdates];
+        if (!self.collectionView) {
+            indexPathChanges = nil;
+            sectionChanges = nil;
+        }
+    }
+    if (self.collectionView) {
+        [self.collectionView performBatchUpdates:^{
+            [self performBatchUpdates];
+        } completion:^(BOOL finished) {
+            indexPathChanges = nil;
+            sectionChanges = nil;
+        }];
+    }
 }
 
 - (void)controller:(NSFetchedResultsController *)controller
@@ -134,18 +145,37 @@
     for (NSDictionary * change in sectionChanges) {
         [change enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             switch ((NSFetchedResultsChangeType)[key intValue]) {
-                case NSFetchedResultsChangeInsert: [self.collectionView insertSections:obj]; break;
-                case NSFetchedResultsChangeDelete: [self.collectionView deleteSections:obj]; break;
+                case NSFetchedResultsChangeInsert:
+                    [self.collectionView insertSections:obj];
+                    [self.tableView insertSections:obj withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
+                case NSFetchedResultsChangeDelete:
+                    [self.collectionView deleteSections:obj];
+                    [self.tableView deleteSections:obj withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
             }
         }];
     }
     for (NSDictionary * change in indexPathChanges) {
         [change enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
             switch ((NSFetchedResultsChangeType)[key intValue]) {
-                case NSFetchedResultsChangeInsert: [self.collectionView insertItemsAtIndexPaths:obj]; break;
-                case NSFetchedResultsChangeDelete: [self.collectionView deleteItemsAtIndexPaths:obj]; break;
-                case NSFetchedResultsChangeUpdate: [self.collectionView reloadItemsAtIndexPaths:obj]; break;
-                case NSFetchedResultsChangeMove:   [self.collectionView moveItemAtIndexPath:obj[0] toIndexPath:obj[1]]; break;
+                case NSFetchedResultsChangeInsert:
+                    [self.collectionView insertItemsAtIndexPaths:obj];
+                    [self.tableView insertRowsAtIndexPaths:obj withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
+                case NSFetchedResultsChangeDelete:
+                    [self.collectionView deleteItemsAtIndexPaths:obj];
+                    [self.tableView deleteRowsAtIndexPaths:obj withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
+                case NSFetchedResultsChangeUpdate:
+                    [self.collectionView reloadItemsAtIndexPaths:obj];
+                    [self.tableView reloadRowsAtIndexPaths:obj withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
+                case NSFetchedResultsChangeMove:
+                    [self.collectionView moveItemAtIndexPath:obj[0] toIndexPath:obj[1]];
+                    [self.tableView deleteRowsAtIndexPaths:obj[0] withRowAnimation:UITableViewRowAnimationAutomatic];
+                    [self.tableView insertRowsAtIndexPaths:obj[1] withRowAnimation:UITableViewRowAnimationAutomatic];
+                    break;
             }
         }];
     }
