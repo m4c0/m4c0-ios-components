@@ -26,6 +26,7 @@
 		44D07F23189FECC80006F5A8 /* UITableViewCell+ShowErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07F21189FECC80006F5A8 /* UITableViewCell+ShowErrors.m */; };
 		44D07F25189FFBCF0006F5A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D07F24189FFBCF0006F5A8 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		44D07F2E18A288DA0006F5A8 /* MICArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07ED6189AC4DF0006F5A8 /* MICArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F2F18A28AF80006F5A8 /* MICBaseDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07ED8189AC4DF0006F5A8 /* MICBaseDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +166,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44D07F2F18A28AF80006F5A8 /* MICBaseDataSource.h in Headers */,
 				44D07F22189FECC80006F5A8 /* UITableViewCell+ShowErrors.h in Headers */,
 				44D07F2E18A288DA0006F5A8 /* MICArrayDataSource.h in Headers */,
 				44C6C5FB189F128D00F96182 /* MICCoreDataSource.h in Headers */,
