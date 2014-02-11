@@ -121,6 +121,8 @@
    didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath
      forChangeType:(NSFetchedResultsChangeType)type
       newIndexPath:(NSIndexPath *)newIndexPath {
+    indexPath    = indexPath    ? [self parentIndexPathFromIndexPath:indexPath]    : nil;
+    newIndexPath = newIndexPath ? [self parentIndexPathFromIndexPath:newIndexPath] : nil;
     switch (type) {
         case NSFetchedResultsChangeInsert: [indexPathChanges addObject:@{@(type) : @[newIndexPath]}]; break;
         case NSFetchedResultsChangeDelete: [indexPathChanges addObject:@{@(type) : @[indexPath]}]; break;
@@ -133,6 +135,7 @@
   didChangeSection:(id<NSFetchedResultsSectionInfo>)sectionInfo
            atIndex:(NSUInteger)sectionIndex
      forChangeType:(NSFetchedResultsChangeType)type {
+    sectionIndex = [self parentSectionFromSection:sectionIndex];
     [sectionChanges addObject:@{@(type) : [NSIndexSet indexSetWithIndex:sectionIndex]}];
 }
 

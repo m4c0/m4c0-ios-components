@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MICBaseDataSource : NSObject<UICollectionViewDataSource, UITableViewDataSource>
+@property (nonatomic, strong) NSIndexPath * displacement;
+
 @property (nonatomic, weak) IBOutlet UICollectionView * collectionView;
 @property (nonatomic, weak) IBOutlet UITableView * tableView;
 
@@ -24,5 +26,11 @@
 - (NSString *)tableView:(UITableView *)tableView cellIdentifierForIndexPath:(NSIndexPath *)indexPath;
 
 - (NSIndexPath *)indexPathForSender:(id)sender;
+
+// "protected"
+- (NSUInteger)childSectionFromSection:(NSUInteger)parentSection;
+- (NSUInteger)parentSectionFromSection:(NSUInteger)childSection;
+- (NSIndexPath *)childIndexPathFromIndexPath:(NSIndexPath *)parentIP;
+- (NSIndexPath *)parentIndexPathFromIndexPath:(NSIndexPath *)childIP;
 
 @end
