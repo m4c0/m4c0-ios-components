@@ -23,23 +23,6 @@
     NSMutableArray * sectionChanges;
 }
 
-- (id)objectAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.controller objectAtIndexPath:indexPath];
-}
-
-- (NSIndexPath *)indexPathForSender:(id)sender {
-    if (self.collectionView) {
-        CGPoint p = [sender convertPoint:CGPointZero toView:self.collectionView];
-        return [self.collectionView indexPathForItemAtPoint:p];
-    } else {
-        return nil;
-    }
-}
-
-- (id)objectForSender:(id)sender {
-    return [self objectAtIndexPath:[self indexPathForSender:sender]];
-}
-
 - (NSFetchedResultsController *)controller {
     if (_controller) return _controller;
     
@@ -79,6 +62,10 @@
     return cell;
 }
 
+- (id)collectionView:(UICollectionView *)collectionView objectAtIndexPath:(NSIndexPath *)indexPath {
+    return [self.controller objectAtIndexPath:indexPath];
+}
+
 #pragma mark - Table View Data Source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -93,6 +80,14 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     [cell setValue:[self.controller objectAtIndexPath:indexPath] forKey:@"object"];
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [[[self.controller sections] objectAtIndex:section] name];
+}
+
+- (id)tableView:(UITableView *)tableView objectAtIndexPath:(NSIndexPath *)indexPath {
+    return [self.controller objectAtIndexPath:indexPath];
 }
 
 #pragma mark - Fetched Results Controller Delegate
