@@ -13,6 +13,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     int res = 0;
     for (MICBaseDataSource * ds in self.dataSources) {
+        ds.displacement = [NSIndexPath indexPathForRow:0 inSection:res];
         res += [ds numberOfSectionsInTableView:tableView];
     }
     return res;

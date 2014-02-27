@@ -30,6 +30,22 @@
     }
 }
 
+- (NSUInteger)childSectionFromSection:(NSUInteger)parentSection {
+    return parentSection - self.displacement.section;
+}
+- (NSUInteger)parentSectionFromSection:(NSUInteger)childSection {
+    return childSection + self.displacement.section;
+}
+
+- (NSIndexPath *)childIndexPathFromIndexPath:(NSIndexPath *)parentIP {
+    return [NSIndexPath indexPathForRow:parentIP.row
+                              inSection:[self childSectionFromSection:parentIP.section]];
+}
+- (NSIndexPath *)parentIndexPathFromIndexPath:(NSIndexPath *)childIP {
+    return [NSIndexPath indexPathForRow:childIP.row
+                              inSection:[self parentSectionFromSection:childIP.section]];
+}
+
 #pragma mark objectForSender
 
 - (id)collectionView:(UICollectionView *)collectionView objectForSender:(id)sender {

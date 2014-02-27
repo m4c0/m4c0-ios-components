@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class NSEntityDescription;
+
 @interface MICManagedObjectContext : NSObject
 @property (nonatomic, readonly) NSManagedObjectContext * context;
 
 + (instancetype)instance;
+
+- (NSEntityDescription *)entityDescriptionForName:(NSString *)name;
+- (id)insertNewObjectForEntityForName:(NSString *)name;
+- (void)saveContext;
+- (void)rollbackContext;
 
 @end

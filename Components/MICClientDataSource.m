@@ -64,7 +64,7 @@
         return;
     }
     if ([result isKindOfClass:[NSError class]]) {
-#warning adotar uma forma de tratar os erros
+#warning how to deal with errors?
         NSLog(@"%@", result);
         
         doneLoading = YES;
