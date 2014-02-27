@@ -25,6 +25,7 @@
 		44D07EE3189AC4DF0006F5A8 /* MICCoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDD189AC4DF0006F5A8 /* MICCoreDataSource.m */; };
 		44D07EE4189AC4DF0006F5A8 /* MICCompositeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */; };
 		44D07EE7189AC5320006F5A8 /* MICManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */; };
+		44F11F0E18BFEED20022F714 /* MICJsonCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F11F0D18BFEED20022F714 /* MICJsonCoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICCompositeDataSource.m; sourceTree = "<group>"; };
 		44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICManagedObjectContext.h; sourceTree = "<group>"; };
 		44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICManagedObjectContext.m; sourceTree = "<group>"; };
+		44F11F0C18BFEED20022F714 /* MICJsonCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICJsonCoder.h; sourceTree = "<group>"; };
+		44F11F0D18BFEED20022F714 /* MICJsonCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICJsonCoder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				44D07EC7189AA9190006F5A8 /* Categories */,
 				44D07ED5189AC4A10006F5A8 /* Data Sources */,
 				44D07EA4189AA5EB0006F5A8 /* Supporting Files */,
+				44F11F0C18BFEED20022F714 /* MICJsonCoder.h */,
+				44F11F0D18BFEED20022F714 /* MICJsonCoder.m */,
 				44D07ED1189AC3EF0006F5A8 /* MICJsonObject.h */,
 				44D07ED2189AC3EF0006F5A8 /* MICJsonObject.m */,
 				44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */,
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F11F0E18BFEED20022F714 /* MICJsonCoder.m in Sources */,
 				44D07ED3189AC3EF0006F5A8 /* MICJsonObject.m in Sources */,
 				44D07EE0189AC4DF0006F5A8 /* MICArrayDataSource.m in Sources */,
 				44D07ECF189AA9240006F5A8 /* UIImage+ImageEffects.m in Sources */,
