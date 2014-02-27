@@ -19,6 +19,14 @@
 		44D07EE3189AC4DF0006F5A8 /* MICCoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDD189AC4DF0006F5A8 /* MICCoreDataSource.m */; };
 		44D07EE4189AC4DF0006F5A8 /* MICCompositeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */; };
 		44D07EE7189AC5320006F5A8 /* MICManagedObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */; };
+		44D07F18189FC3420006F5A8 /* MICManagedObjectContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F1B189FC77A0006F5A8 /* NSManagedObject+Validation.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07F19189FC77A0006F5A8 /* NSManagedObject+Validation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F1C189FC77A0006F5A8 /* NSManagedObject+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */; };
+		44D07F22189FECC80006F5A8 /* UITableViewCell+ShowErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07F20189FECC80006F5A8 /* UITableViewCell+ShowErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F23189FECC80006F5A8 /* UITableViewCell+ShowErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D07F21189FECC80006F5A8 /* UITableViewCell+ShowErrors.m */; };
+		44D07F25189FFBCF0006F5A8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D07F24189FFBCF0006F5A8 /* CoreData.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		44D07F2E18A288DA0006F5A8 /* MICArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07ED6189AC4DF0006F5A8 /* MICArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D07F2F18A28AF80006F5A8 /* MICBaseDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 44D07ED8189AC4DF0006F5A8 /* MICBaseDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44F11F0E18BFEED20022F714 /* MICJsonCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F11F0D18BFEED20022F714 /* MICJsonCoder.m */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +56,11 @@
 		44D07EDF189AC4DF0006F5A8 /* MICCompositeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICCompositeDataSource.m; sourceTree = "<group>"; };
 		44D07EE5189AC5320006F5A8 /* MICManagedObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICManagedObjectContext.h; sourceTree = "<group>"; };
 		44D07EE6189AC5320006F5A8 /* MICManagedObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICManagedObjectContext.m; sourceTree = "<group>"; };
+		44D07F19189FC77A0006F5A8 /* NSManagedObject+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Validation.h"; sourceTree = "<group>"; };
+		44D07F1A189FC77A0006F5A8 /* NSManagedObject+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Validation.m"; sourceTree = "<group>"; };
+		44D07F20189FECC80006F5A8 /* UITableViewCell+ShowErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ShowErrors.h"; sourceTree = "<group>"; };
+		44D07F21189FECC80006F5A8 /* UITableViewCell+ShowErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ShowErrors.m"; sourceTree = "<group>"; };
+		44D07F24189FFBCF0006F5A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		44F11F0C18BFEED20022F714 /* MICJsonCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MICJsonCoder.h; sourceTree = "<group>"; };
 		44F11F0D18BFEED20022F714 /* MICJsonCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MICJsonCoder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
